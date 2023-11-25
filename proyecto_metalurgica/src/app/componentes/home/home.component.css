@@ -1,0 +1,59 @@
+.container{
+    min-height: calc(100vh - 300px);
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: red;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-home{
+    font-family: Helvetica;
+    text-align: left;
+    min-width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.title-home h1{
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.img-home {
+    background-image: url('/assets/messi1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-width: auto; */
+    height: 1000px;
+}
+
+.card-name{
+    display: flex;
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    align-items: center;    /* Para centrar los elementos horizontalmente */
+    justify-content: center; /* Para centrar los elementos verticalmente */
+}
+
+/* @media (max-width: 768px) {
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-home {
+        min-width: 100%;
+    }
+
+    .img-home {
+        width: 100%;
+        height: auto;
+    }
+} */
