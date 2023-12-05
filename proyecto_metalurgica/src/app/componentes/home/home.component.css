@@ -1,45 +1,58 @@
 .container{
     min-height: calc(100vh - 300px);
     margin: 0 auto;
+    min-width: 100%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: red;
+    color: white;
 }
 
 .carousel-inner img {
     width: 100%;
-    height: 100%;
+    height: 800px;
 }
 
 .title-home{
-    font-family: Helvetica;
-    text-align: left;
-    min-width: 100%;
-    margin: 0 auto;
-    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 12%;
+    margin-bottom: 5%;
 }
 
 .title-home h1{
-    font-size: 300%;
-    font-weight: bold;
+    font-family: Helvetica bold;
+    font-weight: 600;
+    text-align: left;
+    /* min-width: 100%; */
+    margin-top: 5%;
 }
 
 .img-home {
-    background-image: url('/assets/messi1.png');
+    background-image: url('/assets/frentes/acero/3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* min-width: auto; */
-    height: 1000px;
+    height: 800px;
 }
 
 .card-name{
     display: flex;
-    flex-direction: column; /* Para que los elementos se apilen verticalmente */
-    align-items: center;    /* Para centrar los elementos horizontalmente */
-    justify-content: center; /* Para centrar los elementos verticalmente */
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.card-name a{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.row{
+    justify-content: center;
 }
 
 /* @media (max-width: 768px) {

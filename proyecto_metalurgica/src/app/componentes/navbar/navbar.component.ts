@@ -7,11 +7,29 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   toggleSubMenu(event: Event) {
-    event.preventDefault(); // Evita que el evento se propague y cause problemas con Bootstrap
-    const subMenu = document.getElementById('subMenu');
-    if (subMenu) {
+    event.preventDefault();
+    const subMenuFrentes = document.getElementById('subMenuFrentes');
+    if (subMenuFrentes) {
       event.stopPropagation();
-      subMenu.classList.toggle('show');
+      subMenuFrentes.classList.toggle('show');
+    }
+  }
+
+  toggleSubMenuBarandas(event: Event) {
+    event.preventDefault();
+    const subMenuBarandas = document.getElementById('subMenuBarandas');
+    if (subMenuBarandas) {
+      event.stopPropagation();
+      subMenuBarandas.classList.toggle('show');
+    }
+  }
+
+  toggleSubMenuPorto(event: Event) {
+    event.preventDefault();
+    const subMenuTres = document.getElementById('subMenuTres');
+    if (subMenuTres) {
+      event.stopPropagation();
+      subMenuTres.classList.toggle('show');
     }
   }
 }

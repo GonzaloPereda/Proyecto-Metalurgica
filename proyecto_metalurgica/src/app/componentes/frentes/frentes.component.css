@@ -1,0 +1,85 @@
+#principal {
+    background-image: url('/assets/messi4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-width: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 50px;
+    height: 400px;
+}
+
+.title-img-principal{
+    color: white;
+}
+
+#frentes-acero{
+    background-color: #F2F2F2;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: left;
+}
+
+#frentes-chapa{
+    background-color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: left;
+}
+
+#frentes-combinada{
+    background-color: #F2F2F2;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: left;
+}
+
+#frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
+    font-family: Helvetica bold;
+    margin-left: 15%;
+    font-weight: 1000;
+}
+
+#frentes-acero p, #frentes-chapa p, #frentes-combinada p{  
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.imag-rows{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.row>* {
+    padding: 0;
+}
+
+.card{
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    height: 300px;
+}
+
+.card-img{
+    border-radius: 0;
+    height: 100%;
+}
+
+@media (max-width: 989px){
+    #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
+        margin-left: 2%;
+    }
+    
+    #frentes-acero p, #frentes-chapa p, #frentes-combinada p{  
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .imag-rows{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
