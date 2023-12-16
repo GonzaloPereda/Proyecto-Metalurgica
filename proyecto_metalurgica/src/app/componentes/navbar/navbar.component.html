@@ -1,57 +1,60 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
-  <a class="navbar-brand" href="/home" id="nameFirst">METARLUGICA <br> EL <span class="nameSecond"> 78 </span></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="padding-left: 40%;">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="back nav-link" routerLink="/home" routerLinkActive="backColor">BIENVENIDOS</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="back nav-link dropdown" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PRODUCTOS
-        </a>
-        <div class="dropdown-menu">
-          <ul style="width: 100%;">
-            <li class="nav-item dropdown">
-              <div class="item">
-                <li><a href="#" class="a-frente" (click)="toggleSubMenu($event)">FRENTES DE PARRILLAS<i class="fa fa-circle-chevron-down"></i></a></li>
-                <div class="sub-menu" id="subMenuFrentes">
-                    <li><a class="sub-item" href="/frentes">Frentes de parrilla en acero inoxidable</a></li>
-                    <li><a class="sub-item" href="/frentes">Frentes de parrilla hierro</a></li>
-                    <li><a class="sub-item" href="/frentes">Frentes de parrilla combinado</a></li>
+  <div class="div-nav">
+    <img src="./assets/logo.png">
+    <a class="navbar-brand" href="/home" id="nameFirst">METARLUGICA <br> EL <span class="nameSecond"> 78 </span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="back nav-link" routerLink="/home" routerLinkActive="backColor" (click)="closeNavbar()">BIENVENIDOS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="back nav-link dropdown productos-open" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PRODUCTOS
+          </a>
+          <div class="dropdown-menu">
+            <ul style="width: 100%;">
+              <li class="nav-item dropdown">
+                <div class="item">
+                  <li><a href="#" class="a-frente" (click)="toggleSubMenu($event)">FRENTES DE PARRILLAS<i class="fa fa-circle-chevron-down"></i></a></li>
+                  <div class="sub-menu" id="subMenuFrentes">
+                    <a class="sub-item" href="/frentes" (click)="closeNavbar()">Frentes de parrilla en acero inoxidable</a>
+                    <a class="sub-item" href="/frentes" (click)="closeNavbar()">Frentes de parrilla hierro</a>
+                    <a class="sub-item" href="/frentes" (click)="closeNavbar()">Frentes de parrilla combinado</a>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <div class="item">
-                <a href="#" class="a-frente" (click)="toggleSubMenuBarandas($event)">BARANDAS<i class="fa fa-circle-chevron-down"></i></a>
-                <div class="sub-menu" id="subMenuBarandas">
-                    <li><a class="sub-item" href="/barandas">Barandas H</a></li>
-                    <li><a class="sub-item" href="/barandas">Barandas botones</a></li>
-                    <li><a class="sub-item" href="/barandas">Barandas de caños</a></li>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="item">
+                  <a href="#" class="a-frente" (click)="toggleSubMenuBarandas($event)">BARANDAS<i class="fa fa-circle-chevron-down"></i></a>
+                  <div class="sub-menu" id="subMenuBarandas">
+                      <a class="sub-item" href="/barandas" (click)="closeNavbar()">Barandas H</a>
+                      <a class="sub-item" href="/barandas" (click)="closeNavbar()">Barandas botones</a>
+                      <a class="sub-item" href="/barandas" (click)="closeNavbar()">Barandas de caños</a>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <div class="item">
-                <a href="#" class="a-frente" (click)="toggleSubMenuPorto($event)">PORTONES, PUERTAS Y TECHOS<i class="fa fa-circle-chevron-down"></i></a>
-                <div class="sub-menu" id="subMenuTres">
-                  <ul class="list-unstyled">
-                    <li><a class="sub-item" href="/puertas">Portones</a></li>
-                    <li><a class="sub-item" href="/puertas">Puertas</a></li>
-                    <li><a class="sub-item" href="/puertas">Techos</a></li>
-                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="item">
+                  <a href="#" class="a-frente" (click)="toggleSubMenuPorto($event)">PORTONES, PUERTAS Y TECHOS<i class="fa fa-circle-chevron-down"></i></a>
+                  <div class="sub-menu" id="subMenuTres">
+                    <ul class="list-unstyled">
+                      <a class="sub-item" href="/puertas" (click)="closeNavbar()">Portones</a>  
+                      <a class="sub-item" href="/puertas" (click)="closeNavbar()">Puertas</a> 
+                      <a class="sub-item" href="/puertas" (click)="closeNavbar()">Techos</a>  
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item active">
-        <a class="back nav-link" routerLink="/contacto" routerLinkActive="backColor">CONTACTO</a>
-      </li>
-    </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="back nav-link" routerLink="/contacto" routerLinkActive="backColor" (click)="closeNavbar()">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

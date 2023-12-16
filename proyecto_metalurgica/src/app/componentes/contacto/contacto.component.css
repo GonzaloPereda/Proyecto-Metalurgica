@@ -1,17 +1,27 @@
 #wrapper {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: #f4f4f4;
+    max-width: 600px;
+    margin: 0px 50px;
+    padding: 50px 0px;
+    /* background-color: #f4f4f4; */
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     min-height: calc(100vh -0px - 300px);
   }
+
+.img-center{
+  background-image: url('/assets/techos/15.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
   
-  h2 {
+  h1 {
     text-align: center;
-    color: #333;
-    font-size: 1.5em;
+    color: white;
+    font-family: Helvetica bold;
+    font-weight: 700;
+    /* font-size: 1.5em; */
   }
   
   form {
@@ -27,7 +37,7 @@
   
   input,
   textarea {
-    padding: 6px;
+    padding: 10px;
     margin: 4px 0;
     font-size: 0.8em;
     border: 1px solid #ccc;
@@ -43,5 +53,5 @@
   }
   
   input[type="submit"]:hover {
-    background-color: #595959;
+    background-color: #898989;
   }

@@ -32,4 +32,11 @@ export class NavbarComponent {
       subMenuTres.classList.toggle('show');
     }
   }
+
+  closeNavbar() {
+    const navbarToggler = document.getElementById('navbarNavAltMarkup');
+    if (navbarToggler) {
+      navbarToggler.classList.remove('show');
+    }
+  }
 }

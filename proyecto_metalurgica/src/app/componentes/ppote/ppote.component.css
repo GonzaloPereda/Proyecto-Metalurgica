@@ -1,9 +1,8 @@
 #principal {
-    background-image: url('/assets/messi4.jpg');
+    background-image: url('/assets/portones/1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* min-width: auto; */
     display: flex;
     align-items: center;
     justify-content: left;
