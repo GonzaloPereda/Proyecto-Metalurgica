@@ -1,4 +1,4 @@
-#principal {
+/* #principal {
     background-image: url('/assets/portones/1.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -12,6 +12,27 @@
 
 .title-img-principal{
     color: white;
+} */
+
+.contenedor {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.contenedor img {
+    width: 100%;
+    height: 700px;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: Helvetica bold;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 #portones{
@@ -81,5 +102,11 @@
     .imag-rows{
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .texto-superpuesto {
+        position: absolute;
+        font-size: 50px;
+        left: 50%;
     }
 }

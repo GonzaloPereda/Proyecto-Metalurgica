@@ -33,10 +33,20 @@ export class NavbarComponent {
     }
   }
 
+  scrollToBarandasH() {
+  const barandasHElement = document.getElementById('barandas-h');
+  if (barandasHElement) {
+    barandasHElement.scrollIntoView({ behavior: 'smooth' });
+  }
+  this.closeNavbar();
+}
+
   closeNavbar() {
     const navbarToggler = document.getElementById('navbarNavAltMarkup');
     if (navbarToggler) {
       navbarToggler.classList.remove('show');
     }
   }
+  
+  
 }

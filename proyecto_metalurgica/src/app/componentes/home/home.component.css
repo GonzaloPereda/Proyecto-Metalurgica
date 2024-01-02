@@ -8,7 +8,22 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
     color: white;
+    /* outline: white;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-image: none; */
+}
+
+.carousel-control-prev{
+    left: -5%;
+}
+
+.carousel-control-next{
+    right: -5%;
 }
 
 .carousel-inner img {
