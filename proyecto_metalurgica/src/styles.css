@@ -13,5 +13,6 @@
 body {
     position: relative;
     font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 

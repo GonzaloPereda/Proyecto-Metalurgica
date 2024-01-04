@@ -148,6 +148,10 @@
         z-index: 1000; 
     }
 
+    .navbar {
+        width: 100%;
+    }
+
     .navbar-nav {
         flex-direction: column; 
         width: 100%;

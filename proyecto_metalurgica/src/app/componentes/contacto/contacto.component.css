@@ -1,11 +1,11 @@
 #wrapper {
     max-width: 600px;
-    margin: 0px 50px;
+    margin: 89px 50px;
     padding: 50px 0px;
     /* background-color: #f4f4f4; */
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    min-height: calc(100vh -0px - 300px);
+    /* min-height: calc(100vh -0px - 300px); */
   }
 
 .img-center{
