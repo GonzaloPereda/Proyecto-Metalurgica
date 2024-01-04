@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +10,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  constructor(private router: Router, private viewportScroller: ViewportScroller) { }
   toggleSubMenu(event: Event) {
     event.preventDefault();
     const subMenuFrentes = document.getElementById('subMenuFrentes');
@@ -33,13 +38,31 @@ export class NavbarComponent {
     }
   }
 
-  scrollToBarandasH() {
-  const barandasHElement = document.getElementById('barandas-h');
-  if (barandasHElement) {
-    barandasHElement.scrollIntoView({ behavior: 'smooth' });
+  scrollToBarandas(fragment: string) {
+    this.router.navigate(['/barandas'], { fragment: fragment });
+    this.closeNavbar();
   }
-  this.closeNavbar();
-}
+
+  scrollToFrentes(fragment: string) {
+    this.router.navigate(['/frentes'], { fragment: fragment });
+    this.closeNavbar();
+  }
+
+  scrollToPpote(fragment: string) {
+    this.router.navigate(['/puertas'], { fragment: fragment });
+    this.closeNavbar();
+  }
+
+  ngAfterViewInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        const fragment = this.router.parseUrl(this.router.url).fragment;
+        if (fragment) {
+          this.viewportScroller.scrollToAnchor(fragment);
+        }
+      }
+    });
+  }
 
   closeNavbar() {
     const navbarToggler = document.getElementById('navbarNavAltMarkup');

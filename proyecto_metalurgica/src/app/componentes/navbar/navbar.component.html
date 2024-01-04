@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f2f2f2;">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f2f2f2;">
   <div class="div-nav">
     <img src="./assets/logo.png">
     <a class="navbar-brand" href="/home" id="nameFirst">METARLUGICA <br> EL <span class="nameSecond"> 78 </span></a>
@@ -20,9 +20,9 @@
                 <div class="item">
                   <li><a href="#" class="a-frente" (click)="toggleSubMenu($event)">FRENTES DE PARRILLAS<i class="fa fa-circle-chevron-down"></i></a></li>
                   <div class="sub-menu" id="subMenuFrentes">
-                    <a class="sub-item" href="/frentes" (click)="closeNavbar()">Frentes de parrilla en acero inoxidable</a>
-                    <a class="sub-item" href="/frentes" (click)="closeNavbar()">Frentes de parrilla hierro</a>
-                    <a class="sub-item" href="/frentes" (click)="closeNavbar()">Frentes de parrilla combinado</a>
+                    <a class="sub-item"  (click)="scrollToFrentes('frentes-acero')">Frentes de parrilla en acero inoxidable</a>
+                    <a class="sub-item"  (click)="scrollToFrentes('frentes-chapa')">Frentes de parrilla hierro</a>
+                    <a class="sub-item" (click)="scrollToFrentes('frentes-combinada')">Frentes de parrilla combinado</a>
                   </div>
                 </div>
               </li>
@@ -30,9 +30,10 @@
                 <div class="item">
                   <a href="#" class="a-frente" (click)="toggleSubMenuBarandas($event)">BARANDAS<i class="fa fa-circle-chevron-down"></i></a>
                   <div class="sub-menu" id="subMenuBarandas">
-                    <a class="sub-item" (click)="scrollToBarandasH()">Barandas H</a>
-                      <a class="sub-item" href="/barandas" (click)="closeNavbar()">Barandas botones</a>
-                      <a class="sub-item" href="/barandas" (click)="closeNavbar()">Barandas de caños</a>
+                    <a class="sub-item" (click)="scrollToBarandas('barandas-h')">Barandas H</a>
+                    <a class="sub-item" (click)="scrollToBarandas('barandas-botones')">Barandas botones</a>
+                    <a class="sub-item" (click)="scrollToBarandas('barandas-caños')">Barandas de caños</a>
+                    <!-- <a class="sub-item" href="/barandas" (click)="closeNavbar()">Barandas de caños</a> -->
                   </div>
                 </div>
               </li>
@@ -41,9 +42,9 @@
                   <a href="#" class="a-frente" (click)="toggleSubMenuPorto($event)">PORTONES, PUERTAS Y TECHOS<i class="fa fa-circle-chevron-down"></i></a>
                   <div class="sub-menu" id="subMenuTres">
                     <ul class="list-unstyled">
-                      <a class="sub-item" href="/puertas" (click)="closeNavbar()">Portones</a>  
-                      <a class="sub-item" href="/puertas" (click)="closeNavbar()">Puertas</a> 
-                      <a class="sub-item" href="/puertas" (click)="closeNavbar()">Techos</a>  
+                      <a class="sub-item" (click)="scrollToPpote('portones')">Portones</a>  
+                      <a class="sub-item" (click)="scrollToPpote('puertas')">Puertas</a> 
+                      <a class="sub-item" (click)="scrollToPpote('techos')">Techos</a>  
                     </ul>
                   </div>
                 </div>
