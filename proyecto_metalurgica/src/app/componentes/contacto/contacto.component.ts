@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ContactoComponent {
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+
 }
