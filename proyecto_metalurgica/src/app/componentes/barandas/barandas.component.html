@@ -7,145 +7,23 @@
 </section>
 
 <section id="barandas-h">
-    <h1 class="text-uppercase">Barandas H</h1>
+  <h1 class="text-uppercase">Barandas H</h1>
     <p>La misma se encuentra construida con columnas en forma de H en acero inoxidable. Lleva vidrio templado 4 + 4 incoloro con opción de incorporar pasamanos de caño redondo o rectangular.
     </p>
-
-    <div class="imag-rows row">
-        <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/barandas/h/1.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/barandas/h/2.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/barandas/h/3.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 mb-3">
-            <div class="card p-1 text-black">
-              <img class="card-img" src="assets/barandas/h/4.jpg" alt="Card image">
-              <div class="card-name card-img-overlay">
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="imag-rows row">
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/h/5.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/h/6.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/h/7.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/barandas/h/8.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-      </div>
-  </div>
-
   <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
+    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesH">
       <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/h/9.jpg" alt="Card image">
+        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
         <div class="card-name card-img-overlay">
         </div>
       </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/h/10.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/h/11.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/h/12.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
     </div>
   </div>
 
-    <div class="imag-rows row">
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/h/13.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/h/14.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/h/15.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/barandas/h/16.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-      </div>
-    </div>
+  <div class="text-center mt-3">
+    <button *ngIf="cantidadVisibleH < imagenesH.length" (click)="verMasH()" class="ver-mas-btn mr-3">VER MÁS</button>
+    <button *ngIf="cantidadVisibleH > 9" (click)="verMenosH()" class="ver-menos-btn">VER MENOS</button>
+  </div>
 </section>
 
 <section id="barandas-botones">
@@ -154,143 +32,43 @@
   </p>
 
   <div class="imag-rows row">
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/botones/1.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/botones/2.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/botones/3.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/barandas/botones/4.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
+    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesBotones">
       <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/5.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
+        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
+        <div class="card-name card-img-overlay" >
         </div>
       </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/6.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/7.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/botones/8.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
     </div>
   </div>
 
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/9.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/10.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/11.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/botones/12.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/13.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/14.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/botones/15.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/botones/16.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
+  <div class="text-center mt-3">
+    <button *ngIf="cantidadVisibleBotones < imagenesBotones.length" (click)="verMasBotones()" class="ver-mas-btn mr-3">VER MÁS</button>
+    <button *ngIf="cantidadVisibleBotones > 9" (click)="verMenosBotones()" class="ver-menos-btn">VER MENOS</button>
   </div>
 </section>
 
 <section id="barandas-caños">
+  <h1 class="text-uppercase">Barandas de caño </h1>
+  <p>Realizadas con pasamanos y columnas de caño diámetro 51. Para el interior hay dos opciones diferentes, vidrio templado 10 mm o también se utilizan 3 caños diámetro 19, todo en acero inoxidable.
+  </p>
+
+  <div class="imag-rows row">
+    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesCanos">
+      <div class="card p-1 text-black">
+        <img class="card-img" [src]="img" alt="Card image">
+        <div class="card-name card-img-overlay" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-3">
+    <button *ngIf="cantidadVisibleCanos < imagenesCanos.length" (click)="verMasCanos()" class="ver-mas-btn mr-3">VER MÁS</button>
+    <button *ngIf="cantidadVisibleCanos > 9" (click)="verMenosCanos()" class="ver-menos-btn">VER MENOS</button>
+  </div>
+</section>
+
+<!-- <section id="barandas-caños">
   <h1 class="text-uppercase">Barandas de caño </h1>
   <p>Realizadas con pasamanos y columnas de caño diámetro 51. Para el interior hay dos opciones diferentes, vidrio templado 10 mm o también se utilizan 3 caños diámetro 19, todo en acero inoxidable.
   </p>
@@ -328,210 +106,6 @@
           </div>
       </div>
   </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/5.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/6.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/7.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/caños/8.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/9.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/10.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/11.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/caños/12.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/13.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/14.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/15.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/caños/16.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/17.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/18.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/19.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/caños/20.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/21.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/22.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/23.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/caños/24.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/25.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/26.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/barandas/caños/27.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/barandas/caños/28.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
+</section> -->
 
 

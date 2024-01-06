@@ -153,9 +153,9 @@
         z-index: 1000; 
     }
 
-    .navbar {
+    /* .navbar {
         width: 100%;
-    }
+    } */
 
     .navbar-nav {
         flex-direction: column; 

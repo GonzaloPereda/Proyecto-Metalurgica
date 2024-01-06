@@ -17,8 +17,8 @@ const routes: Routes = [
   {path: "frentes" , component: FrentesComponent},
   {path: "barandas" , component: BarandasComponent},
   {path: "puertas" , component: PpoteComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirigir desde la ruta raíz a '/home'
-  { path: '**', redirectTo: '/home' } // Redirigir cualquier otra ruta a '/home'
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, 
+  { path: '**', redirectTo: '/home' } 
 ];
 
 @NgModule({

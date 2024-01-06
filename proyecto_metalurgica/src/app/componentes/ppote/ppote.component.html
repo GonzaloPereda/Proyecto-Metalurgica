@@ -11,76 +11,23 @@
 </section>
 
 <section id="portones">
-    <h1 class="text-uppercase">Portones en chapa y combinados con acero inoxidable</h1>
-    <p>Los mismos pueden ser levadizos, corredizos o de abrir. De acuerdo con el deseo y/o necesidades del cliente puede ser de chapa ciega simple o doble, con buñas, vidrio repartido, así como también la parte superior o inferior puede llevar caños a la vista. Puede ser construido íntegramente en, así como también se pueden combinar ambos materiales, para destacar detalles.
-    </p>
+  <h1 class="text-uppercase">Portones en chapa y combinados con acero inoxidable</h1>
+  <p>Los mismos pueden ser levadizos, corredizos o de abrir. De acuerdo con el deseo y/o necesidades del cliente puede ser de chapa ciega simple o doble, con buñas, vidrio repartido, así como también la parte superior o inferior puede llevar caños a la vista. Puede ser construido íntegramente en, así como también se pueden combinar ambos materiales, para destacar detalles.
+  </p>
 
-    <div class="imag-rows row">
-        <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/portones/1.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
+  <div class="imag-rows row">
+    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesPortones">
+      <div class="card p-1 text-black">
+        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
+        <div class="card-name card-img-overlay">
         </div>
-    
-        <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/portones/2.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/portones/3.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 mb-3">
-            <div class="card p-1 text-black">
-              <img class="card-img" src="assets/portones/4.jpg" alt="Card image">
-              <div class="card-name card-img-overlay">
-              </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="imag-rows row">
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/portones/5.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/portones/6.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/portones/7.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/portones/8.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-      </div>
+  <div class="text-center mt-3">
+    <button *ngIf="cantidadVisiblePortones < imagenesPortones.length" (click)="verMasPortones()" class="ver-mas-btn mr-3">VER MÁS</button>
+    <button *ngIf="cantidadVisiblePortones > 9" (click)="verMenosPortones()" class="ver-menos-btn">VER MENOS</button>
   </div>
 </section>
 
@@ -90,125 +37,19 @@
   </p>
 
   <div class="imag-rows row">
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/puertas/1.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/puertas/2.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/puertas/3.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-          <div class="card p-1 text-black">
-            <img class="card-img" src="assets/puertas/4.jpg" alt="Card image">
-            <div class="card-name card-img-overlay">
-            </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
+    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesPuertas">
       <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/5.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/6.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/7.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/puertas/8.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/9.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/10.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/11.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/puertas/12.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/13.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/puertas/14.jpg" alt="Card image">
+        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
         <div class="card-name card-img-overlay">
         </div>
       </div>
     </div>
   </div>
-  
+
+  <div class="text-center mt-3">
+    <button *ngIf="cantidadVisiblePuertas < imagenesPuertas.length" (click)="verMasPuertas()" class="ver-mas-btn mr-3">VER MÁS</button>
+    <button *ngIf="cantidadVisiblePuertas > 9" (click)="verMenosPuertas()" class="ver-menos-btn">VER MENOS</button>
+  </div>
 </section>
 
 <section id="techos">
@@ -217,139 +58,18 @@
   </p>
 
   <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
+    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesTechos">
       <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/1.jpg" alt="Card image">
+        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
         <div class="card-name card-img-overlay">
         </div>
       </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/2.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/3.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/techos/4.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-</div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/5.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/6.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/7.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/techos/8.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
     </div>
   </div>
 
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/9.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/10.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/11.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-1 text-black">
-          <img class="card-img" src="assets/techos/12.jpg" alt="Card image">
-          <div class="card-name card-img-overlay">
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/13.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/14.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/15.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="card p-1 text-black">
-        <img class="card-img" src="assets/techos/16.jpg" alt="Card image">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
+  <div class="text-center mt-3">
+    <button *ngIf="cantidadVisibleTechos < imagenesTechos.length" (click)="verMasTechos()" class="ver-mas-btn mr-3">VER MÁS</button>
+    <button *ngIf="cantidadVisibleTechos > 9" (click)="verMenosTechos()" class="ver-menos-btn">VER MENOS</button>
   </div>
 </section>
 

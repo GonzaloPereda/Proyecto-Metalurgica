@@ -89,6 +89,33 @@
     height: 100%;
 }
 
+.ver-mas-btn {
+    background-color: #3d3f41; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .ver-mas-btn:hover {
+    background-color: #1f2123; 
+  }
+
+  .ver-menos-btn {
+    background-color: #a24a41; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ver-menos-btn:hover {
+    background-color: #9e5951;
+  }
+
 @media (max-width: 989px){
     #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
         margin-left: 2%;
@@ -109,4 +136,5 @@
         font-size: 50px;
         left: 50%;
     }
+
 }
