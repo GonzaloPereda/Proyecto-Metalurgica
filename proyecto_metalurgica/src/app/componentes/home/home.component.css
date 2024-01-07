@@ -81,10 +81,15 @@
     color: white;
 }
 
-.title-center{
+.title-center {
     font-weight: 700;
-    font-family: Helvetica Bold;
+    font-family: 'Helvetica Bold';
     font-size: 25px;
+    background-color: black;
+    border-radius: 15px;
+    display: inline;
+    padding: 5px 10px;
+    color: white;
 }
 
 @media (max-width: 989px){

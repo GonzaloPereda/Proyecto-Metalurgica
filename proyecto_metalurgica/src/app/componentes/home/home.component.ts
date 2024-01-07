@@ -12,4 +12,9 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     $('#carouselExampleControls').carousel();
   }
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+
 }

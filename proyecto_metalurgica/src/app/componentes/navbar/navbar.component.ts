@@ -40,29 +40,54 @@ export class NavbarComponent {
 
   scrollToBarandas(fragment: string) {
     this.router.navigate(['/barandas'], { fragment: fragment });
-    this.closeNavbar();
+
+    setTimeout(() => {
+      const element = document.getElementById(fragment);
+  
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+  
+      this.closeNavbar();
+    });
   }
 
   scrollToFrentes(fragment: string) {
     this.router.navigate(['/frentes'], { fragment: fragment });
-    this.closeNavbar();
+    setTimeout(() => {
+      const element = document.getElementById(fragment);
+  
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+  
+      this.closeNavbar();
+    });
   }
 
   scrollToPpote(fragment: string) {
     this.router.navigate(['/puertas'], { fragment: fragment });
-    this.closeNavbar();
-  }
-
-  ngAfterViewInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        const fragment = this.router.parseUrl(this.router.url).fragment;
-        if (fragment) {
-          this.viewportScroller.scrollToAnchor(fragment);
-        }
+    setTimeout(() => {
+      const element = document.getElementById(fragment);
+  
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
       }
+  
+      this.closeNavbar();
     });
   }
+
+  // ngAfterViewInit() {
+  //   this.router.events.subscribe((event) => {
+  //     if (event instanceof NavigationEnd) {
+  //       const fragment = this.router.parseUrl(this.router.url).fragment;
+  //       if (fragment) {
+  //         this.viewportScroller.scrollToAnchor(fragment);
+  //       }
+  //     }
+  //   });
+  // }
 
   closeNavbar() {
     const navbarToggler = document.getElementById('navbarNavAltMarkup');
