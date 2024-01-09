@@ -175,6 +175,10 @@
     .dropdown-menu.show{
         width: 100%;
     }
+
+    .scrolled {
+        top: 20px;
+      }
 }
 
 .productos-open.show{
