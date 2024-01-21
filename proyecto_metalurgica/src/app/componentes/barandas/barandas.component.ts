@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-barandas',
   templateUrl: './barandas.component.html',
   styleUrls: ['./barandas.component.css']
 })
-export class BarandasComponent {
+export class BarandasComponent implements OnInit{
+
+  itemsPerSlide!: number;
+  singleSlideOffset = true;
+  noWrap = false;
+
   imagenesH = [
     'assets/barandas/h/1.jpg',
     'assets/barandas/h/2.jpg',
@@ -25,18 +30,28 @@ export class BarandasComponent {
     'assets/barandas/h/16.jpg',
   ];
 
-  cantidadVisibleH = 8; 
-  imagenesVisiblesH = this.imagenesH.slice(0, this.cantidadVisibleH);
+  imagenesVisiblesH = this.imagenesH;
 
-  verMasH() {
-    this.cantidadVisibleH += 4; 
-    this.imagenesVisiblesH = this.imagenesH.slice(0, this.cantidadVisibleH);
+  ngOnInit() {
+    this.itemsPerSlide = window.innerWidth >= 768 ? 5 : 2;
   }
 
-  verMenosH() {
-    this.cantidadVisibleH -= 4;
-    this.imagenesVisiblesH = this.imagenesH.slice(0, this.cantidadVisibleH);
+  onResize(event: any) {
+    this.itemsPerSlide = event.target.innerWidth >= 768 ? 5 : 2;
   }
+
+  // cantidadVisibleH = 8; 
+  // imagenesVisiblesH = this.imagenesH.slice(0, this.cantidadVisibleH);
+
+  // verMasH() {
+  //   this.cantidadVisibleH += 4; 
+  //   this.imagenesVisiblesH = this.imagenesH.slice(0, this.cantidadVisibleH);
+  // }
+
+  // verMenosH() {
+  //   this.cantidadVisibleH -= 4;
+  //   this.imagenesVisiblesH = this.imagenesH.slice(0, this.cantidadVisibleH);
+  // }
 
   imagenesBotones = [
     'assets/barandas/botones/1.jpg',

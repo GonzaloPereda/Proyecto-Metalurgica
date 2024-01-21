@@ -10,20 +10,23 @@
   <h1 class="text-uppercase">Barandas H</h1>
     <p>La misma se encuentra construida con columnas en forma de H en acero inoxidable. Lleva vidrio templado 4 + 4 incoloro con opción de incorporar pasamanos de caño redondo o rectangular.
     </p>
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesH">
-      <div class="card p-1 text-black">
-        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
+    
+    <div class="carousel-container" >
+        <carousel [itemsPerSlide]="itemsPerSlide"
+        [singleSlideOffset]="singleSlideOffset"
+        [interval]="7000"
+        [indicatorsByChunk]="true"
+        [noWrap]="noWrap">
+          <slide *ngFor="let img of imagenesVisiblesH" >
+            <img [src]="img" alt="Slide" class="img-responsive center-block">
+          </slide>
+        </carousel>
     </div>
-  </div>
 
-  <div class="text-center mt-3">
+  <!-- <div class="text-center mt-3">
     <button *ngIf="cantidadVisibleH < imagenesH.length" (click)="verMasH()" class="ver-mas-btn mr-3">VER MÁS</button>
     <button *ngIf="cantidadVisibleH > 9" (click)="verMenosH()" class="ver-menos-btn">VER MENOS</button>
-  </div>
+  </div> -->
 </section>
 
 <section id="barandas-botones">
