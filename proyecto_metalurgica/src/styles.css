@@ -16,3 +16,21 @@ body {
     overflow-x: hidden;
 }
 
+.carousel-indicators {
+    display: none !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    border-radius: 60%;
+}
+
+

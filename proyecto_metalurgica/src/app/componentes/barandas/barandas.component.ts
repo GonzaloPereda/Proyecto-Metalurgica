@@ -33,11 +33,11 @@ export class BarandasComponent implements OnInit{
   imagenesVisiblesH = this.imagenesH;
 
   ngOnInit() {
-    this.itemsPerSlide = window.innerWidth >= 768 ? 5 : 2;
+    this.itemsPerSlide = window.innerWidth >= 768 ? 5 : 3;
   }
 
   onResize(event: any) {
-    this.itemsPerSlide = event.target.innerWidth >= 768 ? 5 : 2;
+    this.itemsPerSlide = event.target.innerWidth >= 768 ? 5 : 3;
   }
 
   // cantidadVisibleH = 8; 

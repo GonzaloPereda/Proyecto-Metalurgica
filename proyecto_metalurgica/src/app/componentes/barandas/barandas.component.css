@@ -19,37 +19,16 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
-  }
+}
   
-  .carousel-container img {
+.carousel-container img {
     width: 100%;
     max-width: 300px;
     height: 350px;
-  }
+}
   
-  .carousel-container img:last-child {
+.carousel-container img:last-child {
     margin-right: 320px;
-  }
-
-/* Personalizar flechas del carousel */
-.carousel-control-prev, .carousel-control-next {
-    background-color: white; /* Fondo blanco */
-    width: 50px; /* Ancho de las flechas */
-    height: 50px; /* Altura de las flechas */
-    top: calc(50% - 25px); /* Alinear verticalmente en el centro */
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: black; /* Color del ícono de la flecha */
-    border-radius: 50%; /* Hacer el ícono redondo */
-    color: white; /* Color del ícono */
-    font-size: 24px; /* Tamaño del ícono */
-    line-height: 50px; /* Alinear el ícono verticalmente en el centro */
-}
-
-/* Eliminar el contorno al hacer clic en las flechas */
-.carousel-control-prev:focus, .carousel-control-next:focus {
-    outline: none;
 }
 
 .contenedor {
@@ -176,12 +155,15 @@
 
     .carousel-container img {
         width: 100%;
-        max-width: 150px; /* Ajusta según sea necesario */
-        height: 200px; /* Ajusta según sea necesario */
+        max-width: 200px; 
+        height: 250px;
     }
 
     .carousel-container img:last-child {
-        margin-right: 10px;
+        margin-right: 220px;
     }
 
+    .carousel-indicators {
+        display: none;
+    }
 }
