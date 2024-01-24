@@ -12,6 +12,11 @@ export class BarandasComponent implements OnInit{
   noWrap = false;
 
   imagenesH = [
+    'assets/barandas/prueba.jpg',
+    'assets/barandas/prueba.jpg',
+    'assets/barandas/prueba.jpg',
+    'assets/barandas/prueba.jpg',
+    'assets/barandas/prueba.jpg',
     'assets/barandas/h/1.jpg',
     'assets/barandas/h/2.jpg',
     'assets/barandas/h/3.jpg',

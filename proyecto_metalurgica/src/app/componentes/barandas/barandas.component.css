@@ -47,7 +47,6 @@
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
-    font-family: Helvetica bold;
     font-size: 100px;
     font-weight: 700;
 }
@@ -74,7 +73,6 @@
 }
 
 #barandas-h h1, #barandas-botones h1, #barandas-caños h1{
-    font-family: Helvetica bold;
     margin-left: 15%;
     font-weight: 1000;
 }
@@ -132,7 +130,7 @@
     background-color: #9e5951;
   }
 
-@media (max-width: 989px){
+@media (max-width: 768px){
     #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
         margin-left: 2%;
     }
@@ -155,12 +153,12 @@
 
     .carousel-container img {
         width: 100%;
-        max-width: 200px; 
-        height: 250px;
+        max-width: 300px; 
+        height: 350px;
     }
 
     .carousel-container img:last-child {
-        margin-right: 220px;
+        margin-right: 320px;
     }
 
     .carousel-indicators {

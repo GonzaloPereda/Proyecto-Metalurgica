@@ -3,7 +3,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: Helvetica bold;
     font-size: 70px;
     font-weight: 700;
     color: white;
@@ -16,7 +15,6 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: Helvetica bold;
     font-size: 60px;
     font-weight: 700;
     color: white;
@@ -60,7 +58,6 @@
 }
 
 .title-home h1{
-    font-family: Helvetica bold;
     font-weight: 600;
     text-align: left;
     margin-top: 5%;
@@ -96,10 +93,9 @@
 
 .title-center {
     font-weight: 700;
-    font-family: 'Helvetica Bold';
     font-size: 25px;
-    background-color: black;
-    border-radius: 15px;
+    background-color: #BFBFBF;
+    border: 15px;
     display: inline;
     padding: 5px 10px;
     color: white;

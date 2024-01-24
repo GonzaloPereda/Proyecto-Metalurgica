@@ -38,6 +38,15 @@ export class NavbarComponent {
     }
   }
 
+  toggleSubMenuServicio(event: Event) {
+    event.preventDefault();
+    const subMenuServicio = document.getElementById('subMenuServicio');
+    if (subMenuServicio) {
+      event.stopPropagation();
+      subMenuServicio.classList.toggle('show');
+    }
+  }
+
   scrollToBarandas(fragment: string) {
     this.router.navigate(['/barandas'], { fragment: fragment });
 
@@ -67,6 +76,19 @@ export class NavbarComponent {
 
   scrollToPpote(fragment: string) {
     this.router.navigate(['/puertas'], { fragment: fragment });
+    setTimeout(() => {
+      const element = document.getElementById(fragment);
+  
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+  
+      this.closeNavbar();
+    });
+  }
+
+  scrollToServicios(fragment: string) {
+    this.router.navigate(['/servicios-metalurgicos'], { fragment: fragment });
     setTimeout(() => {
       const element = document.getElementById(fragment);
   

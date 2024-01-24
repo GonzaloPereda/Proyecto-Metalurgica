@@ -49,6 +49,17 @@
                   </div>
                 </div>
               </li>
+              <li class="nav-item dropdown">
+                <div class="item">
+                  <a href="#" class="a-frente" (click)="toggleSubMenuServicio($event)">SERVICIOS METALÚRGICOS<i class="fa fa-circle-chevron-down"></i></a>
+                  <div class="sub-menu" id="subMenuServicio">
+                    <ul class="list-unstyled">
+                      <a class="sub-item" (click)="scrollToServicios('corte')">Corte y plegado de chapa</a>  
+                      <a class="sub-item" (click)="scrollToServicios('cilindrados')">Cilindrados</a>  
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </li>

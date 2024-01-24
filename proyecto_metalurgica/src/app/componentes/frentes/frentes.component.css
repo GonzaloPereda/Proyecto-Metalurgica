@@ -30,7 +30,6 @@
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
-    font-family: Helvetica bold;
     font-size: 70px;
     font-weight: 700;
 }
@@ -57,7 +56,6 @@
 }
 
 #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
-    font-family: Helvetica bold;
     margin-left: 15%;
     font-weight: 1000;
 }

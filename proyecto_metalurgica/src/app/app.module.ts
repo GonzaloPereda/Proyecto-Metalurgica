@@ -11,6 +11,7 @@ import { FrentesComponent } from './componentes/frentes/frentes.component';
 import { BarandasComponent } from './componentes/barandas/barandas.component';
 import { PpoteComponent } from './componentes/ppote/ppote.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ServiciosComponent } from './componentes/servicios/servicios.component';
 
 const routes: Routes = [
   {path: "home" , component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: "frentes" , component: FrentesComponent},
   {path: "barandas" , component: BarandasComponent},
   {path: "puertas" , component: PpoteComponent},
+  {path: "servicios-metalurgicos" , component: ServiciosComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }, 
   { path: '**', redirectTo: '/home' } 
 ];
@@ -31,7 +33,8 @@ const routes: Routes = [
     FooterComponent,
     FrentesComponent,
     BarandasComponent,
-    PpoteComponent
+    PpoteComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,

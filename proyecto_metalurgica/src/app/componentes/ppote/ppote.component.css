@@ -30,7 +30,6 @@
     top: 60%;
     left: 40%;
     transform: translate(-50%, -50%);
-    font-family: Helvetica bold;
     font-size: 90px;
     font-weight: 700;
 }
@@ -57,7 +56,6 @@
 }
 
 #portones h1, #puertas h1, #techos h1{
-    font-family: Helvetica bold;
     margin-left: 15%;
     margin-right: 20%;
     font-weight: 1000;
