@@ -36,9 +36,24 @@ body {
 }
 
 @media (max-width: 767px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        display: none; /* Oculta las flechas */
+    .carousel-control-prev{
+        left: 23%;
+        top: 75%;
+    }
+
+    .carousel-control-next{
+        right: 23%;
+        top: 75%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        background-color: black;
+        background-size: 40% 60%; 
+        width: 35%;
+        height: 50%;
+        border-radius: 60%;
+        filter: brightness(100%);
     }
 }
 

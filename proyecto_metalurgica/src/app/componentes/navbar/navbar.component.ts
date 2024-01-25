@@ -117,6 +117,13 @@ export class NavbarComponent {
       navbarToggler.classList.remove('show');
     }
   }
+
+  closeDropdown(){
+    const subMenus = document.querySelectorAll('.sub-menu');
+    subMenus.forEach(subMenu => {
+      subMenu.classList.remove('show');
+    });
+  }
   
   
 }

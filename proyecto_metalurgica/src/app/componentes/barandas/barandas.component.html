@@ -16,7 +16,8 @@
         [singleSlideOffset]="singleSlideOffset"
         [interval]="5000"
         [indicatorsByChunk]="true"
-        [noWrap]="noWrap">
+        [noWrap]="noWrap"
+        >
           <slide *ngFor="let img of imagenesVisiblesH" >
             <img [src]="img" alt="Slide" class="img-responsive center-block">
           </slide>
