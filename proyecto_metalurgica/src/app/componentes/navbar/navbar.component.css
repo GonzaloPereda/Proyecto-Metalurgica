@@ -136,6 +136,12 @@
     padding-left: 80%;
 }
 
+@media (min-width: 992px) and (max-width: 1330px) {
+    #navbarNavAltMarkup{
+        padding-left: 35%;
+    }
+}
+
 @media (max-width: 992px) {
 
     .div-nav{

@@ -113,7 +113,7 @@
     background-color: #9e5951;
   }
 
-@media (max-width: 989px){
+@media (max-width: 768px){
     #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
         margin-left: 2%;
     }
