@@ -31,10 +31,18 @@
     }
 } */
 
+.carousel-control-prev{
+    top: -70%;
+}
+
+.carousel-control-next{
+    top: -70%;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
+    height: 2%;
+    width: 40%;
     color: white;
 }
 
@@ -48,7 +56,9 @@
 
 .carousel-inner img {
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
+    height: 100%;
+
 }
 
 .title-home{
@@ -65,7 +75,8 @@
 
 .img-center{
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
+    height: 100%;
 }
 
 .card-name{
@@ -101,7 +112,56 @@
     color: white;
 }
 
-@media (max-width: 989px){
+@media (min-width: 768px) and (max-width: 992px) {
+    .carousel-control-prev{
+        top: -75%;
+    }
+    
+    .carousel-control-next{
+        top: -75%;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 0.8%;
+        width: 60%;
+        color: white;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 768px) {
+    .carousel-control-prev{
+        top: -75%;
+    }
+    
+    .carousel-control-next{
+        top: -75%;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 0.8%;
+        width: 60%;
+        color: white;
+    }
+}
+
+@media (max-width: 580px){
+
+    .carousel-control-prev{
+        top: -90%;
+    }
+    
+    .carousel-control-next{
+        top: -90%;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 0.6%;
+        width: 40%;
+        color: white;
+    }
 
     .texto-superpuesto {
         position: absolute;
@@ -125,12 +185,14 @@
 
     .carousel-inner img {
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
+        height: 100%;
     }
 
     .img-center{
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
+        height: 100%;
     }
     
 }

@@ -138,11 +138,43 @@
 
 @media (min-width: 992px) and (max-width: 1330px) {
     #navbarNavAltMarkup{
-        padding-left: 35%;
+        padding-left: 25%;
     }
+    
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    #button-navbar{
+        margin-left: 80%;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+        background-color: white; 
+        position: absolute;
+        top: 89px; 
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+
+    .navbar-nav {
+        flex-direction: column; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu.show{
+        width: 100%;
+    }
+
+    #navbarNavAltMarkup{
+        padding-left: 0%;
+    }
+
+}
+
+@media (max-width: 768px) {
 
     .div-nav{
         padding-left: 5%;

@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+.carousel{
+    position: initial;
+}
+
 .carousel-indicators {
     display: none !important;
 }
@@ -37,12 +41,10 @@ body {
 
 @media (max-width: 767px) {
     .carousel-control-prev{
-        left: 23%;
         top: 75%;
     }
 
     .carousel-control-next{
-        right: 23%;
         top: 75%;
     }
 
@@ -50,7 +52,7 @@ body {
     .carousel-control-next-icon{
         background-color: black;
         background-size: 40% 60%; 
-        width: 35%;
+        width: 50%;
         height: 50%;
         border-radius: 60%;
         filter: brightness(100%);

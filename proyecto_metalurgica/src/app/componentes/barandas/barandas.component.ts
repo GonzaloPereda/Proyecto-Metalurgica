@@ -17,7 +17,7 @@ export class BarandasComponent implements OnInit{
     'assets/barandas/prueba.jpg',
     'assets/barandas/prueba.jpg',
     'assets/barandas/prueba.jpg',
-    // 'assets/barandas/h/1.jpg',
+    'assets/barandas/h/1.jpg',
     // 'assets/barandas/h/2.jpg',
     // 'assets/barandas/h/3.jpg',
     // 'assets/barandas/h/4.jpg',
@@ -77,18 +77,21 @@ export class BarandasComponent implements OnInit{
     'assets/barandas/botones/16.jpg',
   ];
 
-  cantidadVisibleBotones = 8; 
-  imagenesVisiblesBotones = this.imagenesBotones.slice(0, this.cantidadVisibleBotones);
+  imagenesVisiblesBotones = this.imagenesBotones;
 
-  verMasBotones() {
-    this.cantidadVisibleBotones += 4; 
-    this.imagenesVisiblesBotones = this.imagenesBotones.slice(0, this.cantidadVisibleBotones);
-  }
 
-  verMenosBotones() {
-    this.cantidadVisibleBotones -= 4;
-    this.imagenesVisiblesBotones = this.imagenesBotones.slice(0, this.cantidadVisibleBotones);
-  }
+  // cantidadVisibleBotones = 8; 
+  // imagenesVisiblesBotones = this.imagenesBotones.slice(0, this.cantidadVisibleBotones);
+
+  // verMasBotones() {
+  //   this.cantidadVisibleBotones += 4; 
+  //   this.imagenesVisiblesBotones = this.imagenesBotones.slice(0, this.cantidadVisibleBotones);
+  // }
+
+  // verMenosBotones() {
+  //   this.cantidadVisibleBotones -= 4;
+  //   this.imagenesVisiblesBotones = this.imagenesBotones.slice(0, this.cantidadVisibleBotones);
+  // }
 
   imagenesCanos = [
     'assets/barandas/caños/1.jpg',

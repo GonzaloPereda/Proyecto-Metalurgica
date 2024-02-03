@@ -11,6 +11,7 @@ import { ViewportScroller } from '@angular/common';
 })
 export class NavbarComponent {
   constructor(private router: Router, private viewportScroller: ViewportScroller) { }
+
   toggleSubMenu(event: Event) {
     event.preventDefault();
     const subMenuFrentes = document.getElementById('subMenuFrentes');

@@ -35,20 +35,23 @@
   <p>Los botones son de acero inoxidable, los mismos quedan insertos sobre lateral de la pared y vidrio templado de 10 mm. También cuenta con posibilidad de incorporar pasamanos de caño redondo o rectangular.    
   </p>
 
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesBotones">
-      <div class="card p-1 text-black">
-        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
-        <div class="card-name card-img-overlay" >
-        </div>
-      </div>
-    </div>
+  <div class="carousel-container" >
+    <carousel [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [interval]="5000"
+    [indicatorsByChunk]="true"
+    [noWrap]="noWrap"
+    >
+      <slide *ngFor="let img of imagenesVisiblesBotones" >
+        <img [src]="img" alt="Slide" class="img-responsive center-block">
+      </slide>
+    </carousel>
   </div>
 
-  <div class="text-center mt-3">
+  <!-- <div class="text-center mt-3">
     <button *ngIf="cantidadVisibleBotones < imagenesBotones.length" (click)="verMasBotones()" class="ver-mas-btn mr-3">VER MÁS</button>
     <button *ngIf="cantidadVisibleBotones > 9" (click)="verMenosBotones()" class="ver-menos-btn">VER MENOS</button>
-  </div>
+  </div> -->
 </section>
 
 <section id="barandas-caños">
