@@ -131,7 +131,34 @@
     background-color: #9e5951;
   }
 
-@media (max-width: 768px){
+@media (min-width: 600px) and (max-width: 1024px) {
+    #barandas-h{
+        padding-top: 9%;
+    }
+    
+    #barandas-botones{
+        padding-top: 9%;
+    }
+
+    #barandas-caños{
+        padding-top: 9%;
+    }
+}
+
+@media (max-width: 600px){
+
+    #barandas-h{
+        padding-top: 16%;
+    }
+    
+    #barandas-botones{
+        padding-top: 16%;
+    }
+
+    #barandas-caños{
+        padding-top: 16%;
+    }
+
     #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
         margin-left: 2%;
     }

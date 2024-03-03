@@ -12,26 +12,21 @@ export class BarandasComponent implements OnInit{
   noWrap = false;
 
   imagenesH = [
-    'assets/barandas/prueba.jpg',
-    'assets/barandas/prueba.jpg',
-    'assets/barandas/prueba.jpg',
-    'assets/barandas/prueba.jpg',
-    'assets/barandas/prueba.jpg',
     'assets/barandas/h/1.jpg',
-    // 'assets/barandas/h/2.jpg',
-    // 'assets/barandas/h/3.jpg',
-    // 'assets/barandas/h/4.jpg',
-    // 'assets/barandas/h/5.jpg',
-    // 'assets/barandas/h/6.jpg',
-    // 'assets/barandas/h/7.jpg',
-    // 'assets/barandas/h/8.jpg',
-    // 'assets/barandas/h/9.jpg',
-    // 'assets/barandas/h/10.jpg',
-    // 'assets/barandas/h/11.jpg',
-    // 'assets/barandas/h/12.jpg',
-    // 'assets/barandas/h/13.jpg',
-    // 'assets/barandas/h/14.jpg',
-    // 'assets/barandas/h/15.jpg',
+    'assets/barandas/h/2.jpg',
+    'assets/barandas/h/3.jpg',
+    'assets/barandas/h/4.jpg',
+    'assets/barandas/h/5.jpg',
+    'assets/barandas/h/6.jpg',
+    'assets/barandas/h/7.jpg',
+    'assets/barandas/h/8.jpg',
+    'assets/barandas/h/9.jpg',
+    'assets/barandas/h/10.jpg',
+    'assets/barandas/h/11.jpg',
+    'assets/barandas/h/12.jpg',
+    'assets/barandas/h/13.jpg',
+    'assets/barandas/h/14.jpg',
+    'assets/barandas/h/15.jpg',
     // 'assets/barandas/h/16.jpg',
   ];
 
@@ -124,18 +119,20 @@ export class BarandasComponent implements OnInit{
     'assets/barandas/caños/28.jpg',
     
   ];
+  
+  imagenesVisiblesCanos = this.imagenesCanos;
 
-  cantidadVisibleCanos = 8; 
-  imagenesVisiblesCanos = this.imagenesCanos.slice(0, this.cantidadVisibleCanos);
+  // cantidadVisibleCanos = 8; 
+  // imagenesVisiblesCanos = this.imagenesCanos.slice(0, this.cantidadVisibleCanos);
 
-  verMasCanos() {
-    this.cantidadVisibleCanos += 4; 
-    this.imagenesVisiblesCanos = this.imagenesCanos.slice(0, this.cantidadVisibleCanos);
-  }
+  // verMasCanos() {
+  //   this.cantidadVisibleCanos += 4; 
+  //   this.imagenesVisiblesCanos = this.imagenesCanos.slice(0, this.cantidadVisibleCanos);
+  // }
 
-  verMenosCanos() {
-    this.cantidadVisibleCanos -= 4;
-    this.imagenesVisiblesCanos = this.imagenesCanos.slice(0, this.cantidadVisibleCanos);
-  }
+  // verMenosCanos() {
+  //   this.cantidadVisibleCanos -= 4;
+  //   this.imagenesVisiblesCanos = this.imagenesCanos.slice(0, this.cantidadVisibleCanos);
+  // }
 
 }

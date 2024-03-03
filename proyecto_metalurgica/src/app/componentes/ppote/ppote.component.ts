@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ppote',
   templateUrl: './ppote.component.html',
   styleUrls: ['./ppote.component.css']
 })
-export class PpoteComponent {
+export class PpoteComponent implements OnInit {
+
+  itemsPerSlide!: number;
+  singleSlideOffset = true;
+  noWrap = false;
 
   imagenesPortones = [
     'assets/portones/1.jpg',
@@ -19,18 +23,28 @@ export class PpoteComponent {
     
   ];
 
-  cantidadVisiblePortones = 8; 
-  imagenesVisiblesPortones = this.imagenesPortones.slice(0, this.cantidadVisiblePortones);
+  imagenesVisiblesPortones = this.imagenesPortones
 
-  verMasPortones() {
-    this.cantidadVisiblePortones += 4; 
-    this.imagenesVisiblesPortones = this.imagenesPortones.slice(0, this.cantidadVisiblePortones);
+  ngOnInit() {
+    this.itemsPerSlide = window.innerWidth >= 820 ? 5 : 3;
   }
 
-  verMenosPortones() {
-    this.cantidadVisiblePortones -= 4;
-    this.imagenesVisiblesPortones = this.imagenesPortones.slice(0, this.cantidadVisiblePortones);
+  onResize(event: any) {
+    this.itemsPerSlide = event.target.innerWidth >= 820 ? 5 : 3;
   }
+
+  // cantidadVisiblePortones = 8; 
+  // imagenesVisiblesPortones = this.imagenesPortones.slice(0, this.cantidadVisiblePortones);
+
+  // verMasPortones() {
+  //   this.cantidadVisiblePortones += 4; 
+  //   this.imagenesVisiblesPortones = this.imagenesPortones.slice(0, this.cantidadVisiblePortones);
+  // }
+
+  // verMenosPortones() {
+  //   this.cantidadVisiblePortones -= 4;
+  //   this.imagenesVisiblesPortones = this.imagenesPortones.slice(0, this.cantidadVisiblePortones);
+  // }
 
   imagenesPuertas = [
     'assets/puertas/1.jpg',
@@ -50,18 +64,19 @@ export class PpoteComponent {
     
   ];
 
-  cantidadVisiblePuertas = 8; 
-  imagenesVisiblesPuertas = this.imagenesPuertas.slice(0, this.cantidadVisiblePuertas);
+  imagenesVisiblesPuertas = this.imagenesPuertas
+  // cantidadVisiblePuertas = 8; 
+  // imagenesVisiblesPuertas = this.imagenesPuertas.slice(0, this.cantidadVisiblePuertas);
 
-  verMasPuertas() {
-    this.cantidadVisiblePuertas += 4; 
-    this.imagenesVisiblesPuertas = this.imagenesPuertas.slice(0, this.cantidadVisiblePuertas);
-  }
+  // verMasPuertas() {
+  //   this.cantidadVisiblePuertas += 4; 
+  //   this.imagenesVisiblesPuertas = this.imagenesPuertas.slice(0, this.cantidadVisiblePuertas);
+  // }
 
-  verMenosPuertas() {
-    this.cantidadVisiblePuertas -= 4;
-    this.imagenesVisiblesPuertas = this.imagenesPuertas.slice(0, this.cantidadVisiblePuertas);
-  }
+  // verMenosPuertas() {
+  //   this.cantidadVisiblePuertas -= 4;
+  //   this.imagenesVisiblesPuertas = this.imagenesPuertas.slice(0, this.cantidadVisiblePuertas);
+  // }
 
   imagenesTechos = [
     'assets/techos/1.jpg',
@@ -80,19 +95,33 @@ export class PpoteComponent {
     'assets/techos/14.jpg',
     'assets/techos/15.jpg',
     'assets/techos/16.jpg',
+    'assets/techos/17.jpg',
+    'assets/techos/18.jpg',
+    'assets/techos/19.jpg',
+    'assets/techos/20.jpg',
+    'assets/techos/21.jpg',
+    'assets/techos/22.jpg',
+    'assets/techos/23.jpg',
+    'assets/techos/24.jpg',
+    'assets/techos/25.jpg',
+    'assets/techos/26.jpg',
+    'assets/techos/27.jpg',
+
   ];
 
-  cantidadVisibleTechos = 8; 
-  imagenesVisiblesTechos = this.imagenesTechos.slice(0, this.cantidadVisibleTechos);
+  imagenesVisiblesTechos = this.imagenesTechos
 
-  verMasTechos() {
-    this.cantidadVisibleTechos += 4; 
-    this.imagenesVisiblesTechos = this.imagenesTechos.slice(0, this.cantidadVisibleTechos);
-  }
+  // cantidadVisibleTechos = 8; 
+  // imagenesVisiblesTechos = this.imagenesTechos.slice(0, this.cantidadVisibleTechos);
 
-  verMenosTechos() {
-    this.cantidadVisibleTechos -= 4;
-    this.imagenesVisiblesTechos = this.imagenesTechos.slice(0, this.cantidadVisibleTechos);
-  }
+  // verMasTechos() {
+  //   this.cantidadVisibleTechos += 4; 
+  //   this.imagenesVisiblesTechos = this.imagenesTechos.slice(0, this.cantidadVisibleTechos);
+  // }
+
+  // verMenosTechos() {
+  //   this.cantidadVisibleTechos -= 4;
+  //   this.imagenesVisiblesTechos = this.imagenesTechos.slice(0, this.cantidadVisibleTechos);
+  // }
 
 }

@@ -1,10 +1,10 @@
 <section class="contenedor">
-    <img src="assets/barandas/h/6.jpg" alt="Descripción de la imagen">
+  <img src="assets/barandas/h/grande.jpg" alt="Descripción de la imagen">
   
-    <div class="texto-superpuesto">
-      Servicios Metalúrgicos
-    </div>
-  </section>
+  <div class="texto-superpuesto">
+    Servicios Metalúrgicos
+  </div>
+</section>
   
   <section id="corte">
     <h1 class="text-uppercase">Corte y peglado de chapa</h1>
@@ -12,17 +12,18 @@
       </p>
 
       
-      <!-- <div class="carousel-container" >
-          <carousel [itemsPerSlide]="itemsPerSlide"
-          [singleSlideOffset]="singleSlideOffset"
-          [interval]="5000"
-          [indicatorsByChunk]="true"
-          [noWrap]="noWrap">
-            <slide *ngFor="let img of imagenesVisiblesH" >
-              <img [src]="img" alt="Slide" class="img-responsive center-block">
-            </slide>
-          </carousel>
-      </div> -->
+      <div class="carousel-container" >
+        <carousel [itemsPerSlide]="itemsPerSlide"
+        [singleSlideOffset]="singleSlideOffset"
+        [interval]="5000"
+        [indicatorsByChunk]="true"
+        [noWrap]="noWrap"
+        >
+          <slide *ngFor="let img of imagenesVisiblesCorte" >
+            <img [src]="img" alt="Slide" class="img-responsive center-block">
+          </slide>
+        </carousel>
+    </div>
   
     <!-- <div class="text-center mt-3">
       <button *ngIf="cantidadVisibleH < imagenesH.length" (click)="verMasH()" class="ver-mas-btn mr-3">VER MÁS</button>
@@ -36,18 +37,21 @@
     </p>
 
   
-    <!-- <div class="imag-rows row">
-      <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesBotones">
-        <div class="card p-1 text-black">
-          <img class="card-img" [src]="img" alt="Card image" loading="lazy">
-          <div class="card-name card-img-overlay" >
-          </div>
-        </div>
-      </div>
+    <div class="carousel-container" >
+      <carousel [itemsPerSlide]="itemsPerSlide"
+      [singleSlideOffset]="singleSlideOffset"
+      [interval]="5000"
+      [indicatorsByChunk]="true"
+      [noWrap]="noWrap"
+      >
+        <slide *ngFor="let img of imagenesVisiblesCilindrado" >
+          <img [src]="img" alt="Slide" class="img-responsive center-block">
+        </slide>
+      </carousel>
     </div>
   
-    <div class="text-center mt-3">
+    <!-- <div class="text-center mt-3">
       <button *ngIf="cantidadVisibleBotones < imagenesBotones.length" (click)="verMasBotones()" class="ver-mas-btn mr-3">VER MÁS</button>
       <button *ngIf="cantidadVisibleBotones > 9" (click)="verMenosBotones()" class="ver-menos-btn">VER MENOS</button>
-    </div> -->
+    </div>  -->
   </section>

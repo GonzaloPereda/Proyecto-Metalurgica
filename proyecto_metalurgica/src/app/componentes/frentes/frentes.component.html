@@ -2,7 +2,7 @@
     <h2 class="title-img-principal">FRENTES DE PARRILLA</h2>
 </section> -->
 <section class="contenedor">
-  <img src="assets/frentes/acero/3.jpg" alt="Descripción de la imagen">
+  <img src="assets/frentes/acero/grande.jpg" alt="Descripción de la imagen">
 
   <div class="texto-superpuesto">
     Frentes de parrillas
@@ -15,20 +15,18 @@
         El interior de parrilla cuenta con accionamiento de movimiento frontal, paños desmontables los cuales pueden ser de varilla diámetro 8 mm o ángulo, en acero inoxidable y/o hierro enlozado. Incluye un chapón divisor y leñero, al cual se le puede incluir puerta.
     </p>
 
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesAcero">
-      <div class="card p-1 text-black">
-        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
+    <div class="carousel-container" >
+      <carousel [itemsPerSlide]="itemsPerSlide"
+      [singleSlideOffset]="singleSlideOffset"
+      [interval]="5000"
+      [indicatorsByChunk]="true"
+      [noWrap]="noWrap"
+      >
+        <slide *ngFor="let img of imagenesVisiblesAcero" >
+          <img [src]="img" alt="Slide" class="img-responsive center-block">
+        </slide>
+      </carousel>
     </div>
-  </div>
-
-  <div class="text-center mt-3">
-    <button *ngIf="cantidadVisibleAcero < imagenesAcero.length" (click)="verMasAcero()" class="ver-mas-btn mr-3">VER MÁS</button>
-    <button *ngIf="cantidadVisibleAcero > 9" (click)="verMenosAcero()" class="ver-menos-btn">VER MENOS</button>
-  </div>
 </section>
 
 <section id="frentes-chapa">
@@ -37,14 +35,18 @@
     El interior de parrilla cuenta con accionamiento de movimiento frontal, paños desmontables los cuales pueden ser de varilla diámetro 8 mm o ángulo en hierro enlozado y/o acero inoxidable. Incluye un chapón divisor y leñero, al cual se le puede incluir puerta.     
   </p>
 
-  <div class="imag-rows row">
-    <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesChapa">
-      <div class="card p-1 text-black">
-        <img class="card-img" [src]="img" alt="Card image" loading="lazy">
-        <div class="card-name card-img-overlay">
-        </div>
-      </div>
-    </div>
+ 
+  <div class="carousel-container" >
+    <carousel [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [interval]="5000"
+    [indicatorsByChunk]="true"
+    [noWrap]="noWrap"
+    >
+      <slide *ngFor="let img of imagenesVisiblesChapa" >
+        <img [src]="img" alt="Slide" class="img-responsive center-block">
+      </slide>
+    </carousel>
   </div>
 
   <!-- <div class="text-center mt-3">
@@ -59,7 +61,20 @@
     El interior de parrilla cuenta con accionamiento de movimiento frontal, paños desmontables los cuales pueden ser de varilla diámetro 8 mm o ángulo de hierro enlozado, así como también en acero inoxidable. Incluye un chapón divisor y leñero, al cual se le puede incluir puerta    
   </p>
 
-  <div class="imag-rows row">
+  <div class="carousel-container" >
+    <carousel [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [interval]="5000"
+    [indicatorsByChunk]="true"
+    [noWrap]="noWrap"
+    >
+      <slide *ngFor="let img of imagenesVisiblesCombinada" >
+        <img [src]="img" alt="Slide" class="img-responsive center-block">
+      </slide>
+    </carousel>
+  </div>
+
+  <!-- <div class="imag-rows row">
     <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesCombinada">
       <div class="card p-1 text-black">
         <img class="card-img" [src]="img" alt="Card image" loading="lazy">
@@ -67,10 +82,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="text-center mt-3">
+  <!-- <div class="text-center mt-3">
     <button *ngIf="cantidadVisibleCombinada < imagenesCombinada.length" (click)="verMasCombinada()" class="ver-mas-btn mr-3">VER MÁS</button>
     <button *ngIf="cantidadVisibleCombinada > 9" (click)="verMenosCombinada()" class="ver-menos-btn">VER MENOS</button>
-  </div>
+  </div> -->
 </section>

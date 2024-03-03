@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-frentes',
   templateUrl: './frentes.component.html',
   styleUrls: ['./frentes.component.css']
 })
-export class FrentesComponent {
+export class FrentesComponent implements OnInit{
+
+  itemsPerSlide!: number;
+  singleSlideOffset = true;
+  noWrap = false;
 
   imagenesAcero = [
     'assets/frentes/acero/1.jpg',
@@ -28,31 +32,49 @@ export class FrentesComponent {
     'assets/frentes/acero/18.jpg',
     'assets/frentes/acero/19.jpg',
     'assets/frentes/acero/20.jpg',
+    'assets/frentes/acero/21.jpg',
+    'assets/frentes/acero/22.jpg',
+    'assets/frentes/acero/23.jpg',
+    'assets/frentes/acero/24.jpg',
+    'assets/frentes/acero/25.jpg',
 
   ];
 
-  cantidadVisibleAcero = 8; 
-  imagenesVisiblesAcero = this.imagenesAcero.slice(0, this.cantidadVisibleAcero);
+  imagenesVisiblesAcero = this.imagenesAcero
 
-  verMasAcero() {
-    this.cantidadVisibleAcero += 4; 
-    this.imagenesVisiblesAcero = this.imagenesAcero.slice(0, this.cantidadVisibleAcero);
+  ngOnInit() {
+    this.itemsPerSlide = window.innerWidth >= 820 ? 5 : 3;
   }
 
-  verMenosAcero() {
-    this.cantidadVisibleAcero -= 4;
-    this.imagenesVisiblesAcero = this.imagenesAcero.slice(0, this.cantidadVisibleAcero);
+  onResize(event: any) {
+    this.itemsPerSlide = event.target.innerWidth >= 820 ? 5 : 3;
   }
+
+  // cantidadVisibleAcero = 8; 
+  // imagenesVisiblesAcero = this.imagenesAcero.slice(0, this.cantidadVisibleAcero);
+
+  // verMasAcero() {
+  //   this.cantidadVisibleAcero += 4; 
+  //   this.imagenesVisiblesAcero = this.imagenesAcero.slice(0, this.cantidadVisibleAcero);
+  // }
+
+  // verMenosAcero() {
+  //   this.cantidadVisibleAcero -= 4;
+  //   this.imagenesVisiblesAcero = this.imagenesAcero.slice(0, this.cantidadVisibleAcero);
+  // }
 
   imagenesChapa = [
     'assets/frentes/chapa/1.jpg',
     'assets/frentes/chapa/2.jpg',
     'assets/frentes/chapa/3.jpg',
-    'assets/frentes/chapa/4.jpg',
+    'assets/frentes/chapa/3.jpg',
+    'assets/frentes/chapa/3.jpg',
   ];
 
-  cantidadVisibleChapa = 8; 
-  imagenesVisiblesChapa = this.imagenesChapa.slice(0, this.cantidadVisibleChapa);
+  imagenesVisiblesChapa = this.imagenesChapa
+
+  // cantidadVisibleChapa = 8; 
+  // imagenesVisiblesChapa = this.imagenesChapa.slice(0, this.cantidadVisibleChapa);
 
   // verMasChapa() {
   //   this.cantidadVisibleChapa += 4; 
@@ -77,21 +99,21 @@ export class FrentesComponent {
     'assets/frentes/combinada/10.jpg',
     'assets/frentes/combinada/11.jpg',
     'assets/frentes/combinada/12.jpg',
-    'assets/frentes/combinada/13.jpg',
-    'assets/frentes/combinada/14.jpg',
 
   ];
 
-  cantidadVisibleCombinada = 8; 
-  imagenesVisiblesCombinada = this.imagenesCombinada.slice(0, this.cantidadVisibleCombinada);
+  imagenesVisiblesCombinada = this.imagenesCombinada
 
-  verMasCombinada() {
-    this.cantidadVisibleCombinada += 4; 
-    this.imagenesVisiblesCombinada = this.imagenesCombinada.slice(0, this.cantidadVisibleCombinada);
-  }
+  // cantidadVisibleCombinada = 8; 
+  // imagenesVisiblesCombinada = this.imagenesCombinada.slice(0, this.cantidadVisibleCombinada);
 
-  verMenosCombinada() {
-    this.cantidadVisibleCombinada -= 4;
-    this.imagenesVisiblesCombinada = this.imagenesCombinada.slice(0, this.cantidadVisibleCombinada);
-  }
+  // verMasCombinada() {
+  //   this.cantidadVisibleCombinada += 4; 
+  //   this.imagenesVisiblesCombinada = this.imagenesCombinada.slice(0, this.cantidadVisibleCombinada);
+  // }
+
+  // verMenosCombinada() {
+  //   this.cantidadVisibleCombinada -= 4;
+  //   this.imagenesVisiblesCombinada = this.imagenesCombinada.slice(0, this.cantidadVisibleCombinada);
+  // }
 }

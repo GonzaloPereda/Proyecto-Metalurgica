@@ -3,7 +3,7 @@
 </section> -->
 
 <section class="contenedor">
-  <img src="assets/portones/1.jpg" alt="Descripción de la imagen">
+  <img src="assets/portones/grande.jpg" alt="Descripción de la imagen">
 
   <div class="texto-superpuesto">
     Puertas, portones y techos
@@ -15,7 +15,21 @@
   <p>Los mismos pueden ser levadizos, corredizos o de abrir. De acuerdo con el deseo y/o necesidades del cliente puede ser de chapa ciega simple o doble, con buñas, vidrio repartido, así como también la parte superior o inferior puede llevar caños a la vista. Puede ser construido íntegramente en, así como también se pueden combinar ambos materiales, para destacar detalles.
   </p>
 
-  <div class="imag-rows row">
+  
+  <div class="carousel-container" >
+    <carousel [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [interval]="5000"
+    [indicatorsByChunk]="true"
+    [noWrap]="noWrap"
+    >
+      <slide *ngFor="let img of imagenesVisiblesPortones" >
+        <img [src]="img" alt="Slide" class="img-responsive center-block">
+      </slide>
+    </carousel>
+  </div>
+
+  <!-- <div class="imag-rows row">
     <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesPortones">
       <div class="card p-1 text-black">
         <img class="card-img" [src]="img" alt="Card image" loading="lazy">
@@ -28,7 +42,7 @@
   <div class="text-center mt-3">
     <button *ngIf="cantidadVisiblePortones < imagenesPortones.length" (click)="verMasPortones()" class="ver-mas-btn mr-3">VER MÁS</button>
     <button *ngIf="cantidadVisiblePortones > 9" (click)="verMenosPortones()" class="ver-menos-btn">VER MENOS</button>
-  </div>
+  </div> -->
 </section>
 
 <section id="puertas">
@@ -36,7 +50,20 @@
   <p>Las mismas pueden ser en chapa simple o doble, de una hoja o de una hoja con paños fijos laterales. Puede realizarse en chapa con buñas, vidrio en lateral y/o manijón, así como también en el caso de las puertas de chapa se pueden realizar detalles en acero inoxidable. Posee bisagras reforzadas y cerradura, las mismas siempre serán para amurar. 
   </p>
 
-  <div class="imag-rows row">
+  <div class="carousel-container" >
+    <carousel [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [interval]="5000"
+    [indicatorsByChunk]="true"
+    [noWrap]="noWrap"
+    >
+      <slide *ngFor="let img of imagenesVisiblesPuertas" >
+        <img [src]="img" alt="Slide" class="img-responsive center-block">
+      </slide>
+    </carousel>
+  </div>
+
+  <!-- <div class="imag-rows row">
     <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesPuertas">
       <div class="card p-1 text-black">
         <img class="card-img" [src]="img" alt="Card image">
@@ -49,7 +76,7 @@
   <div class="text-center mt-3">
     <button *ngIf="cantidadVisiblePuertas < imagenesPuertas.length" (click)="verMasPuertas()" class="ver-mas-btn mr-3">VER MÁS</button>
     <button *ngIf="cantidadVisiblePuertas > 9" (click)="verMenosPuertas()" class="ver-menos-btn">VER MENOS</button>
-  </div>
+  </div> -->
 </section>
 
 <section id="techos">
@@ -57,7 +84,20 @@
   <p>Estructuras construidas con caño, refuerzos intermedios y cenefa con chapa galvanizada, que incluye canaleta. Se pueden incluir diferentes tipos de cubiertas a definir por el cliente, las mismas pueden ser vidrio 4+4 incoloro y chapa cristal. Los materiales, pueden ser íntegramente en chapa para pintar o acero inoxidable, así como también se pueden combinar ambos materiales, para destacar detalles. 
   </p>
 
-  <div class="imag-rows row">
+  <div class="carousel-container" >
+    <carousel [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [interval]="5000"
+    [indicatorsByChunk]="true"
+    [noWrap]="noWrap"
+    >
+      <slide *ngFor="let img of imagenesVisiblesTechos" >
+        <img [src]="img" alt="Slide" class="img-responsive center-block">
+      </slide>
+    </carousel>
+  </div>
+
+  <!-- <div class="imag-rows row">
     <div class="col-md-3 mb-3" *ngFor="let img of imagenesVisiblesTechos">
       <div class="card p-1 text-black">
         <img class="card-img" [src]="img" alt="Card image">
@@ -70,7 +110,7 @@
   <div class="text-center mt-3">
     <button *ngIf="cantidadVisibleTechos < imagenesTechos.length" (click)="verMasTechos()" class="ver-mas-btn mr-3">VER MÁS</button>
     <button *ngIf="cantidadVisibleTechos > 9" (click)="verMenosTechos()" class="ver-menos-btn">VER MENOS</button>
-  </div>
+  </div> -->
 </section>
 
 

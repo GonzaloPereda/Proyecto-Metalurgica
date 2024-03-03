@@ -22,9 +22,10 @@
 }
   
 .carousel-container img {
-    width: 100%;
+    /* width: 100%;
     max-width: 300px;
-    height: 350px;
+    height: 350px; */
+    max-width: 95%;
 }
   
 .carousel-container img:last-child {
@@ -44,11 +45,11 @@
 
 .texto-superpuesto {
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 60%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
-    font-weight: 700;
+    font-size: 90px;
+    font-weight: 500;
 }
 
 #corte{
@@ -123,7 +124,26 @@
     background-color: #9e5951;
   }
 
-@media (max-width: 768px){
+@media (min-width: 600px) and (max-width: 1024px) {
+    #corte{
+        padding-top: 9%;
+    }
+    
+    #cilindrados{
+        padding-top: 9%;
+    }
+}
+
+@media (max-width: 600px){
+
+    #corte{
+        padding-top: 16%;
+    }
+    
+    #cilindrados{
+        padding-top: 16%;
+    }
+
     #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
         margin-left: 2%;
     }
@@ -145,16 +165,20 @@
     }
 
     .carousel-container img {
-        width: 100%;
+        /* width: 100%;
         max-width: 300px; 
-        height: 350px;
+        height: 350px; */
+        max-width: 95%;
+        height: auto;
     }
 
     .carousel-container img:last-child {
-        margin-right: 320px;
+        margin-right: 250px;
     }
 
     .carousel-indicators {
         display: none;
     }
+
+    
 }
