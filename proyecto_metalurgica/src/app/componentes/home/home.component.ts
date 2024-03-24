@@ -13,28 +13,28 @@ export class HomeComponent implements AfterViewInit {
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
-    window.addEventListener('scroll', this.handleScroll);
+    // window.addEventListener('scroll', this.handleScroll);
   }
 
-  ngOnDestroy(): void {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+  // ngOnDestroy(): void {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // }
 
-  handleScroll() {
-    const navbar = document.querySelector('.navbar');
+  // handleScroll() {
+  //   const navbar = document.querySelector('.navbar');
 
-    if (navbar) {
-      const currentScrollY = window.scrollY;
+  //   if (navbar) {
+  //     const currentScrollY = window.scrollY;
 
-      if (currentScrollY > this.previousScrollY) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
+  //     if (currentScrollY > this.previousScrollY) {
+  //       navbar.classList.add('scrolled');
+  //     } else {
+  //       navbar.classList.remove('scrolled');
+  //     }
 
-      this.previousScrollY = currentScrollY;
-    }
-  }
+  //     this.previousScrollY = currentScrollY;
+  //   }
+  // }
 
   ngAfterViewInit(): void {
     $('#carouselExampleControls').carousel();

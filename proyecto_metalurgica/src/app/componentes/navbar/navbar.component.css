@@ -158,6 +158,7 @@
     .navbar {
         height: 65px;
         width: 100%;
+        top: -2px;
     }
 
     .div-nav img{
@@ -200,11 +201,16 @@
     .navbar {
         height: 65px;
         width: 100%;
+        top: -2px;
     }
 
     .div-nav img{
-        width: 50px;
+        width: 30px;
         margin-right: 10px;
+    }
+
+    .div-nav .navbar-brand{
+        font-size: 15px;
     }
 
     .navbar-collapse {

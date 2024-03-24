@@ -1,36 +1,36 @@
 .texto-superpuesto {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 70px;
     font-weight: 700;
     color: white;
 
-    animation: mover-izquierda-derecha 2s 1;
-    animation-fill-mode: forwards;
+    /* animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards; */
 }
 
 .texto-superpuesto-2 {
     position: absolute;
     top: 60%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
     font-weight: 700;
     color: white;
-    animation: mover-izquierda-derecha 2s 1;
-    animation-fill-mode: forwards;
+    /* animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards; */
 }
 
-@keyframes mover-izquierda-derecha {
+/* @keyframes mover-izquierda-derecha {
     from{
         transform: translateY(400%);
     }   
     to{
         transform: translateY(-130%);
     }
-}
+} */
 
 .carousel-control-prev{
     top: -52%;
@@ -151,17 +151,17 @@
 @media (max-width: 580px){
 
     .carousel-control-prev{
-        top: -90%;
+        top: -83%;
     }
     
     .carousel-control-next{
-        top: -90%;
+        top: -83%;
     }
     
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         height: 0.6%;
-        width: 40%;
+        width: 60%;
         color: white;
     }
 
@@ -176,7 +176,7 @@
         position: absolute;
         font-size: 20px;
         left: 50%;
-        top: 50%;
+        top: 60%;
     }
 
     .medium{
@@ -188,13 +188,13 @@
     .carousel-inner img {
         width: 100%;
         /* height: 500px; */
-        height: 100%;
+        height: 300px;
     }
 
     .img-center{
         width: 100%;
-        /* height: 500px; */
-        height: 100%;
+        height: 300px;
+        /* height: 100%; */
     }
     
 }

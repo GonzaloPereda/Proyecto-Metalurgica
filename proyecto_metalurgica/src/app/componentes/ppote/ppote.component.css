@@ -160,11 +160,11 @@
         padding-top: 16%;
     }
 
-    #frentes-acero h1, #frentes-chapa h1, #frentes-combinada h1{
+    #portones h1, #puertas h1, #techos h1{
         margin-left: 2%;
     }
     
-    #frentes-acero p, #frentes-chapa p, #frentes-combinada p{  
+    #portones p, #puertas p, #techos p{  
         margin-left: 2%;
         margin-right: 2%;
     }
