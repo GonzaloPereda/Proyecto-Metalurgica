@@ -1,9 +1,9 @@
 .texto-superpuesto {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 70px;
+    font-size:60px;
     font-weight: 700;
     color: white;
 
@@ -116,34 +116,54 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
     .carousel-control-prev{
-        top: -75%;
+        top: -70%;
     }
     
     .carousel-control-next{
-        top: -75%;
+        top: -70%;
     }
     
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        height: 0.8%;
-        width: 60%;
+        height: 2%;
+        width: 80%;
         color: white;
+    }
+
+    .texto-superpuesto {
+        position: absolute;
+        font-size: 50px;
+        left: 50%;
+        top: 30%;
+    }
+
+    .texto-superpuesto-2{
+        position: absolute;
+        font-size: 20px;
+        left: 50%;
+        top: 60%;
+    }
+
+    .medium{
+        position: absolute;
+        top: 60%;
+        left: 30%;
     }
 }
 
 @media (min-width: 580px) and (max-width: 768px) {
     .carousel-control-prev{
-        top: -75%;
+        top: -70%;
     }
     
     .carousel-control-next{
-        top: -75%;
+        top: -70%;
     }
     
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        height: 0.8%;
-        width: 60%;
+        height: 2%;
+        width: 80%;
         color: white;
     }
 }

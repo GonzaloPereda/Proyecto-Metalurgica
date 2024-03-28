@@ -132,6 +132,11 @@
   }
 
 @media (min-width: 600px) and (max-width: 1024px) {
+
+    .texto-superpuesto {
+        left: 40%;
+    }
+
     #barandas-h{
         padding-top: 9%;
     }
