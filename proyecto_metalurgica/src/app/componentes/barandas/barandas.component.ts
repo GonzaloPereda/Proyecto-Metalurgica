@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-barandas',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./barandas.component.css']
 })
 export class BarandasComponent implements OnInit{
+
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   itemsPerSlide!: number;
   singleSlideOffset = true;
@@ -34,6 +38,13 @@ export class BarandasComponent implements OnInit{
 
   ngOnInit() {
     this.itemsPerSlide = window.innerWidth >= 820 ? 5 : 3;
+
+    this.route.url.subscribe(url => {
+      if (url.length && url[0].path === 'barandas') {
+        // Desplázate hacia arriba de la sección
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
   }
 
   onResize(event: any) {

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyecto_metalurgica';
-  phoneNumber = '1126173500'; 
+  phoneNumber = '+541126173500'; 
   message = 'Hola, estoy interesado en tu servicio';
   whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(this.message)}`;
 }
