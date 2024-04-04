@@ -1,6 +1,7 @@
 {
   "name": "proyecto-metalurgica",
   "version": "0.0.0",
+  "homepage": "https://metalurgicael78.com.ar/home",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

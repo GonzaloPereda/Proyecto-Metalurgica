@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-/* body{
-    min-height: 100%;
-    top: 0;
-    margin:0;
-} */
-
 body {
     position: relative;
     font-family: Helvetica, sans-serif;

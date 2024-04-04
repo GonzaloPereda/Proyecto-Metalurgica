@@ -47,8 +47,9 @@
     position: absolute;
     top: 50%;
     left: 20%;
+    right: 60%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 700;
 }
 
@@ -134,7 +135,9 @@
 @media (min-width: 600px) and (max-width: 1024px) {
 
     .texto-superpuesto {
-        left: 40%;
+        position: absolute;
+        font-size: 50px;
+        /* left: 50%; */
     }
 
     #barandas-h{
@@ -181,7 +184,7 @@
     .texto-superpuesto {
         position: absolute;
         font-size: 50px;
-        left: 50%;
+        /* left: 50%; */
     }
 
     .carousel-container img {
